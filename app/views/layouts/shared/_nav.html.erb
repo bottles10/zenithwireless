@@ -1,10 +1,13 @@
-<nav>
-    <div>
-        <%= link_to "Zenith Wireless", root_path %>
-        <%= link_to "Personal", '#' %>
-        <%= link_to "Business", '#' %>
-        <%= link_to "Government", '#' %>
-        <%= link_to "Technology", '#' %>
-        <%= link_to "Buy Voucher", '#' %>
-    </div>
-</nav>
+<header>
+    <nav>
+        <div class="p-3 flex items-center justify-between shadow-xl rounded-xl">
+            <%= link_to "Zenith Wireless", root_path, class: "mx-8 font-serif font-extrabold text-2xl"%>
+            <%= link_to "Personal", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
+            <%= link_to "Business", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
+            <%= link_to "Government", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
+            <div class="h-14 w-[2px] bg-purple-600 hidden lg:block"></div>
+            <%= link_to "Technology", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
+            <%= link_to "Buy Voucher", '#', class: "inline-block py-3 px-6 font-semibold bg-purple-600 hover:bg-purple-500 text-purple-100 rounded-full hover:shadow-lg hover:shadow-pink-300 transition duration-300" %>
+        </div>
+    </nav>
+</header>
