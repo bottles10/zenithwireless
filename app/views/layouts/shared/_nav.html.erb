@@ -1,13 +1,37 @@
 <header>
-    <nav>
-        <div class="p-3 flex items-center justify-between shadow-xl rounded-xl">
-            <%= link_to "Zenith Wireless", root_path, class: "mx-8 font-serif font-extrabold text-2xl"%>
-            <%= link_to "Personal", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
-            <%= link_to "Business", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
-            <%= link_to "Government", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
-            <div class="h-14 w-[2px] bg-purple-600 hidden lg:block"></div>
-            <%= link_to "Technology", '#', class: "inline-block p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%>
-            <%= link_to "Buy Voucher", '#', class: "inline-block py-3 px-6 font-semibold bg-purple-600 hover:bg-purple-500 text-purple-100 rounded-full hover:shadow-lg hover:shadow-pink-300 transition duration-300" %>
-        </div>
-    </nav>
+    <nav-wrap class="flex  flex-wrap items-center justify-between shadow-xl rounded-xl">
+    <!-- breadcrumb button section -->
+    <label for="menu-toggle" class="block lg:hidden cursor-pointer">
+        <bread-crumb class="flex ml-4 space-x-1 tranform -rotate-90">
+        <div class="h-4 border-l-2"></div>
+        <div class="h-4 border-l-2"></div>
+        <div class="h-4 border-l-2"></div>
+        </bread-crumb>
+    </label>
+    <input type="checkbox" id="menu-toggle" class=" hidden peer/breadcrumb">
+    <!-- End of breadcrumb button section -->
+
+    <!-- Logo section -->
+    <div-logo class="block md:-ml-60 lg:ml-0">
+        <%= link_to "Zenith Wireless", root_path, class: "lg:mx-8 font-serif font-extrabold text-lg md:text-2xl"%>
+    </div-logo>
+    <!-- End of logo section -->
+
+    <%= link_to "Buy Voucher", '#', class: "inline-block lg:hidden m-2 py-2 px-3 md:py-3 md:px-6 font-semibold bg-gradient-to-r from-purple-600 to-purple-700 hover:bg-purple-500 text-purple-100 rounded-full hover:shadow-lg hover:shadow-pink-300 transition duration-300" %>
+
+        <!-- Navigation links section -->
+        <nav class="lg:flex w-full lg:w-auto max-h-0 lg:max-h-none peer-checked/breadcrumb:max-h-[500px] 
+                    peer-checked/breadcrumb:opacity-100 peer-checked/breadcrumb:translate-y-0 lg:translate-y-0 
+                    overflow-hidden lg:overflow-visible opacity-0 lg:opacity-100 -translate-y-2 
+                    transition-all duration-500 ease-out">
+            <ul class="p-3 lg:flex items-center justify-between lg:space-x-4">
+                <li><%= link_to "Personal", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
+                <li><%= link_to "Business", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
+                <li><%= link_to "Government", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
+                <li><span class="h-14 w-0.5 bg-purple-600 hidden lg:block"></span></li>
+                <li><%= link_to "Technology", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
+                <li><%= link_to "Buy Voucher", '#', class: "hidden lg:inline-block py-3 px-6 font-semibold bg-gradient-to-r from-purple-600 to-purple-700 hover:bg-purple-500 text-purple-100 rounded-full hover:shadow-lg hover:shadow-pink-300 transition duration-300" %></li>
+            </ul>
+        </nav>
+    </nav-wrap>
 </header>

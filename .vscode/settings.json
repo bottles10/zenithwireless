@@ -3,5 +3,9 @@
     "emmet.includeLanguages": {
         "ruby": "html",
         "erb": "html"
+    },
+    "tailwindCSS.includeLanguages": {
+        "erb": "html",
+        "ruby": "html"
     }
 }
