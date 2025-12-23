@@ -1,0 +1,8 @@
+2025-12-22 21:26:01.868 EST [1443] LOG:  starting PostgreSQL 16.11 on x86_64-apple-darwin21.6.0, compiled by Apple clang version 13.1.6 (clang-1316.0.21.2.5), 64-bit
+2025-12-22 21:26:01.869 EST [1443] LOG:  listening on IPv6 address "::1", port 5432
+2025-12-22 21:26:01.869 EST [1443] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-12-22 21:26:01.872 EST [1443] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-12-22 21:26:01.893 EST [1446] LOG:  database system was shut down at 2025-12-22 07:06:14 EST
+2025-12-22 21:26:01.910 EST [1443] LOG:  database system is ready to accept connections
+2025-12-22 21:31:01.893 EST [1444] LOG:  checkpoint starting: time
+2025-12-22 21:31:02.408 EST [1444] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.510 s, sync=0.003 s, total=0.516 s; sync files=6, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2F071A0, redo lsn=0/2F07168

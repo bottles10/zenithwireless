@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "afterDelay",
+    "emmet.includeLanguages": {
+        "ruby": "html",
+        "erb": "html"
+    }
+}
