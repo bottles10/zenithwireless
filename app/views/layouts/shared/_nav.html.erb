@@ -2,18 +2,19 @@
     <nav-wrap class="flex  flex-wrap items-center justify-between shadow-xl rounded-xl">
     <!-- breadcrumb button section -->
     <label for="menu-toggle" class="block lg:hidden cursor-pointer">
-        <bread-crumb class="flex ml-4 space-x-1 tranform -rotate-90">
-        <div class="h-4 border-l-2"></div>
-        <div class="h-4 border-l-2"></div>
-        <div class="h-4 border-l-2"></div>
+        <bread-crumb class="flex ml-2 space-x-1 tranform -rotate-90 hover:rounded-full hover:bg-purple-100 p-4">
+        <div class="h-4 border-l-2 border-purple-600"></div>
+        <div class="h-4 border-l-2 border-purple-600"></div>
+        <div class="h-4 border-l-2 border-purple-600"></div>
         </bread-crumb>
     </label>
     <input type="checkbox" id="menu-toggle" class=" hidden peer/breadcrumb">
     <!-- End of breadcrumb button section -->
 
     <!-- Logo section -->
-    <div-logo class="block md:-ml-60 lg:ml-0">
-        <%= link_to "Zenith Wireless", root_path, class: "lg:mx-8 font-serif font-extrabold text-lg md:text-2xl"%>
+    <div-logo class="block mr-8 md:-ml-72 lg:ml-0">
+        <%= image_tag "zenith-wireless5.png", class: "w-32 h-auto lg:mx-8", alt: "zenith wireless" %>
+        <%# link_to "Zenith Wireless", root_path, class: "lg:mx-8 font-serif font-extrabold text-lg md:text-2xl"%>
     </div-logo>
     <!-- End of logo section -->
 
