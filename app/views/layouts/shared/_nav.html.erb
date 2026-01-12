@@ -1,5 +1,5 @@
-<header>
-    <nav-wrap class="flex  flex-wrap items-center justify-between shadow-xl rounded-xl">
+<header class="fixed w-full mx-auto mt-12 px-3 z-50">
+    <nav-wrap class="flex flex-wrap items-center justify-between bg-white shadow-xl rounded-2xl">
     <!-- breadcrumb button section -->
     <label for="menu-toggle" class="block lg:hidden cursor-pointer">
         <bread-crumb class="flex ml-2 space-x-1 tranform -rotate-90 hover:rounded-full hover:bg-purple-100 p-4">
@@ -12,7 +12,7 @@
     <!-- End of breadcrumb button section -->
 
     <!-- Logo section -->
-    <div-logo class="block mr-8 md:-ml-80 lg:ml-0">
+    <div-logo class="block mr-16 md:mr-96 lg:mr-0 md:-ml-12  lg:ml-0">
        <%= link_to image_tag("zenith-wireless5.png", class: "w-28 md:w-32 h-auto lg:mx-8", alt: "zenith wireless"), root_path %>
         <%# link_to "Zenith Wireless", root_path, class: "lg:mx-8 font-serif font-extrabold text-lg md:text-2xl"%>
     </div-logo>
@@ -25,13 +25,13 @@
                     peer-checked/breadcrumb:opacity-100 peer-checked/breadcrumb:translate-y-0 lg:translate-y-0 
                     overflow-hidden lg:overflow-visible opacity-0 lg:opacity-100 -translate-y-2 
                     transition-all duration-500 ease-out">
-            <ul class="p-3 lg:flex items-center justify-between lg:space-x-4">
-                <li><%= link_to "Personal", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
-                <li><%= link_to "Business", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
-                <li><%= link_to "Government", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
+            <ul class="p-3 lg:flex items-center justify-between lg:space-x-12">
+                <li><%= link_to "Personal", some_text_path, class: "inline-block w-full lg:w-auto py-3 px-6 font-semibold text-xl hover:bg-purple-100 rounded transition duration-300"%></li>
+                <li><%= link_to "Business", '#', class: "inline-block w-full lg:w-auto py-3 px-6 font-semibold text-xl hover:bg-purple-100 rounded transition duration-300"%></li>
+                <li><%= link_to "Government", '#', class: "inline-block w-full lg:w-auto py-3 px-6 font-semibold text-xl hover:bg-purple-100 rounded transition duration-300"%></li>
                 <li><span class="h-14 w-0.5 bg-purple-600 hidden lg:block"></span></li>
-                <li><%= link_to "Technology", '#', class: "inline-block w-full lg:w-auto p-3 font-semibold hover:bg-purple-100 rounded transition duration-300"%></li>
-                <li><%= link_to "Buy Voucher", '#', class: "hidden lg:inline-block py-3 px-6 font-semibold bg-gradient-to-r from-purple-600 to-purple-700 hover:bg-purple-500 text-purple-100 rounded-full hover:shadow-lg hover:shadow-pink-300 transition duration-300" %></li>
+                <li><%= link_to "Technology", '#', class: "inline-block w-full lg:w-auto py-3 px-6 font-semibold text-xl hover:bg-purple-100 rounded transition duration-300"%></li>
+                <li><%= link_to "Buy Voucher", '#', class: "hidden lg:inline-block py-3 px-6 font-semibold text-xl bg-gradient-to-r from-purple-600 to-purple-700 hover:bg-purple-500 text-purple-100 rounded-full hover:shadow-lg hover:shadow-pink-300 transition duration-300" %></li>
             </ul>
         </nav>
     </nav-wrap>
