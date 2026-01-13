@@ -1,5 +1,5 @@
-<header class="fixed w-full mx-auto mt-14 px-8 lg:px-24 z-50">
-    <nav-wrap class="flex flex-wrap items-center justify-between bg-white shadow-xl rounded-2xl">
+<header class="fixed w-full mx-auto mt-14 px-6 xl:px-24 z-50">
+    <nav-wrap class="flex flex-wrap lg:flex-nowrap items-center justify-between bg-white shadow-xl rounded-2xl">
      <!-- input before label/outside of label div cos peer must be a direct sibling of nav -->
     <input type="checkbox" id="menu-toggle" class=" hidden peer/breadcrumb"> 
 
@@ -29,7 +29,7 @@
                     peer-checked/breadcrumb:opacity-100 peer-checked/breadcrumb:translate-y-0 lg:translate-y-0 
                     overflow-hidden lg:overflow-visible opacity-0 lg:opacity-100 -translate-y-2 
                     transition-all duration-500 ease-out">
-            <ul class="p-2 lg:flex items-center justify-between lg:space-x-8">
+            <ul class="p-2 lg:flex items-center justify-between lg:space-x-2 xl:space-x-8">
                 <li><%= link_to "Personal", some_text_path, class: "inline-block w-full lg:w-auto ml-6 lg:ml-0 py-3 px-6 font-semibold text-lg hover:bg-purple-100 rounded transition duration-300"%></li>
                 <li><%= link_to "Business", '#', class: "inline-block w-full lg:w-auto ml-6 lg:ml-0 py-3 px-6 font-semibold text-lg hover:bg-purple-100 rounded transition duration-300"%></li>
                 <li><%= link_to "Government", '#', class: "inline-block w-full lg:w-auto ml-6 lg:ml-0 py-3 px-6 font-semibold text-lg hover:bg-purple-100 rounded transition duration-300"%></li>
