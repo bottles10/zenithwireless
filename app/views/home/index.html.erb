@@ -33,7 +33,7 @@
 <!-- =============================================== -->
 <!-- -----------------Speed Up section------------------ --> 
 <!-- =============================================== -->
-<section class="relative m-6 md:m-12 lg:m-14 xl:m-24 text-white bg-[#0f141a] rounded-4xl overflow-hidden">
+<section class="relative my-6 mx-1 md:my-12 md:mx-1 lg:my-14 lg:mx-14 xl:my-24 xl:mx-24 text-white bg-[#0f141a] rounded-4xl overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0 z-0">
     <%= image_tag 'speedup-streamon.png',
@@ -69,7 +69,35 @@
 </section>
 <!-- -----------------End of Hero section------------------ --> 
 
+<!-- =============================================== -->
+<!-- -----------------High Speed section------------------ --> 
+<!-- =============================================== -->
+<section class="relative flex flex-col my-8 w-full min-h-auto md:min-h-[500px] max-h-[750px] aspect-square md:aspect-auto bg-[#0f141a] overflow-hidden">
+	<div class="absolute inset-0">
+		<%= video_tag "high-speed.mp4",
+			autoplay: true,
+			muted: true,
+			loop: true,
+			playsinline: true,
+			preload: "metadata",
+			class: "w-full h-full object-cover" 
+		%>
+	</div>
 
-
+  <!-- Text content -->
+	<div class="absolute inset-0 flex flex-col md:items-center justify-center">
+	  <div class="max-w-7xl py-10 px-7 md:py-16 md:px-16">
+			<div class="flex md:flex-col items-start justify-start md:items-center md:justify-center">
+				<h2 class="text-5xl md:text-6xl font-thin text-white">High-speed internet 
+					<br aria-hidden="true">
+					<span class="bg-clip-text text-transparent 
+											bg-linear-to-r from-purple-800
+											via-purple-600 to-purple-100">wherever</span> 
+					you start browsing!
+				</h2>
+			</div>
+		</div>
+	</div>
+</section>
 
 
