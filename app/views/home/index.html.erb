@@ -1,43 +1,45 @@
 <!-- =============================================== -->
-<!-- -----------------Hero section------------------ --> 
+<!-- -----------------Hero section------------------ -->
 <!-- =============================================== -->
 <section class="relative flex flex-col items-center justify-end h-screen w-full bg-[#0f141a]">
   <!-- Background video -->
   <div class="absolute inset-0 overflow-hidden">
     <%= video_tag "personal-hero-film.mp4",
-          autoplay: true,
-          muted: true,
-          loop: false,
-          playsinline: true,
-          preload: "metadata",
-          class: "h-full w-full object-cover" %>
+        autoplay: true,
+        muted: true,
+        loop: false,
+        playsinline: true,
+        preload: "metadata",
+        class: "h-full w-full object-cover" 
+    %>
   </div>
   <!-- Dark overlay -->
- <div class="absolute bottom-0 left-0 w-full h-1/3
-              bg-linear-to-t
-              from-slate-950 via-slate-950/40 to-transparent
-              pointer-events-none">
+  <div class="absolute bottom-0 left-0 w-full h-1/3
+    bg-linear-to-t
+    from-slate-950 via-slate-950/40 to-transparent
+    pointer-events-none">
   </div>
 
   <!-- Hero content -->
   <div class="relative z-10 p-12 flex flex-col items-center justify-end h-full ">
     <div class=" mx-auto max-w-6xl px-6 text-white">
       <h1 class="text-xl md:text-3xl tracking-tight">
-        A <strong class="bg-clip-text text-transparent font-light bg-linear-to-r from-purple-500 via-purple-400 to-purple-100">new era of internet</strong> is here!
+          A <strong class="bg-clip-text text-transparent font-light bg-linear-to-r from-purple-500 via-purple-400 to-purple-100">new era of internet</strong> is here!
       </h1>
     </div>
   </div>
 </section>
-<!-- -----------------End of Hero section------------------ --> 
+<!-- -----------------End of Hero section------------------ -->
 
 <!-- =============================================== -->
-<!-- -----------------Speed Up section------------------ --> 
+<!-- -----------------Speed Up section------------------ -->
 <!-- =============================================== -->
 <section class="relative my-6 mx-1 md:my-12 md:mx-1 lg:my-14 lg:mx-14 xl:my-24 xl:mx-24 text-white bg-[#0f141a] rounded-4xl overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0 z-0">
     <%= image_tag 'speedup-streamon.png',
-      class: "w-full h-full object-cover object-left" %>
+        class: "w-full h-full object-cover object-left" 
+    %>
   </div>
 
   <!-- Dark overlay for readability -->
@@ -47,84 +49,114 @@
   <div class="relative z-10 py-42 md:py-28 px-8 md:px-20 max-w-2xl md:ml-auto">
     <div class="flex flex-col justify-end md:justify-center gap-4 md:gap-16 -mb-36 md:mb-0 pt-20 md:pt-0">
       <h2 class="text-5xl md:text-8xl">
-        <span class="bg-clip-text text-transparent 
+        <span class="bg-clip-text text-transparent
                       bg-linear-to-r from-purple-800
-                      via-purple-300 to-purple-50">Speed 
-        </span>
+                      via-purple-300 to-purple-50">Speed
+      </span>
         up,
-				<br aria-hidden="true">
-        <span class="bg-clip-text text-transparent 
-                      bg-linear-to-r from-purple-800 
+      <br aria-hidden="true">
+      <span class="bg-clip-text text-transparent
+                      bg-linear-to-r from-purple-800
                       via-purple-300 to-purple-50">Stream
-        </span>
-        on
-      </h2>
+    </span>
+      on
+  </h2>
 
-      <p class="text-sm md:text-xl">
-        Make seamless video calls, stream 4K videos, and accelerate downloads and
-        uploads — all at once. Zenith Wireless is designed to handle all your devices
-        internet needs with a fast, reliable connection.
-      </p>
+  <p class="text-sm md:text-xl">
+      Make seamless video calls, stream 4K videos, and accelerate downloads and
+      uploads — all at once. Zenith Wireless is designed to handle all your devices
+      internet needs with a fast, reliable connection.
+  </p>
+</div>
+</div>
+</section>
+<!-- -----------------End of Hero section------------------ -->
+
+<!-- =============================================== -->
+<!-- -----------------High Speed section------------------ -->
+<!-- =============================================== -->
+<section class="relative flex flex-col my-8 w-full min-h-auto md:min-h-[500px] max-h-[750px] aspect-square md:aspect-auto bg-[#0f141a] overflow-hidden">
+  <div class="absolute inset-0">
+    <%= video_tag "high-speed.mp4",
+        autoplay: true,
+        muted: true,
+        loop: true,
+        playsinline: true,
+        preload: "metadata",
+        class: "w-full h-full object-cover" 
+    %>
+  </div>
+
+  <!-- Text content -->
+  <div class="absolute inset-0 flex flex-col md:items-center justify-center">
+    <div class="max-w-7xl py-10 px-7 md:py-16 md:px-16">
+      <div class="flex md:flex-col items-start justify-start md:items-center md:justify-center">
+        <h2 class="text-5xl md:text-6xl font-thin text-white">High-speed internet
+        <br aria-hidden="true">
+        <span class="bg-clip-text text-transparent
+          bg-linear-to-r from-purple-800
+          via-purple-600 to-purple-100">wherever</span>
+            you start browsing!
+        </h2>
+      </div>
     </div>
   </div>
 </section>
-<!-- -----------------End of Hero section------------------ --> 
+<!-- -----------------End of High-speed section------------------ -->
 
 <!-- =============================================== -->
-<!-- -----------------High Speed section------------------ --> 
-<!-- =============================================== -->
-<section class="relative flex flex-col my-8 w-full min-h-auto md:min-h-[500px] max-h-[750px] aspect-square md:aspect-auto bg-[#0f141a] overflow-hidden">
-	<div class="absolute inset-0">
-		<%= video_tag "high-speed.mp4",
-			autoplay: true,
-			muted: true,
-			loop: true,
-			playsinline: true,
-			preload: "metadata",
-			class: "w-full h-full object-cover" 
-		%>
-	</div>
-
-  <!-- Text content -->
-	<div class="absolute inset-0 flex flex-col md:items-center justify-center">
-	  <div class="max-w-7xl py-10 px-7 md:py-16 md:px-16">
-			<div class="flex md:flex-col items-start justify-start md:items-center md:justify-center">
-				<h2 class="text-5xl md:text-6xl font-thin text-white">High-speed internet 
-					<br aria-hidden="true">
-					<span class="bg-clip-text text-transparent 
-											bg-linear-to-r from-purple-800
-											via-purple-600 to-purple-100">wherever</span> 
-					you start browsing!
-				</h2>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- -----------------End of High-speed section------------------ --> 
-
-<!-- =============================================== -->
-<!-- -----------------Get connected section------------------ --> 
+<!-- -----------------Get connected section------------------ -->
 <!-- =============================================== -->
 <section class="relative flex flex-col my-8 md:my-12 lg:my-14 xl:my-24 mx-4 md:mx-8 lg:mx-12 xl:mx-24 bg-[#0f141a] rounded-4xl overflow-hidden">
-<!-- Background image -->
-	<div class="absolute inset-0">
-	  <%= image_tag "get-connected.png",
-		  class: "w-full h-full object-cover" %>
-	</div>
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <%= image_tag "get-connected.png",
+        class: "w-full h-full object-cover" 
+    %>
+  </div>
 
-	<!-- Dark overlay for readability -->
-	<div class="absolute md:inset-y-0 bottom-0 h-40 md:h-full w-full md:w-[90%] bg-linear-to-t md:bg-linear-to-r from-black md:from-black/40 via-black/90 md:via-black/40 md:to-black/1"></div>
+  <!-- Dark overlay for readability -->
+  <div class="absolute md:inset-y-0 bottom-0 h-40 md:h-full w-full md:w-[90%] bg-linear-to-t md:bg-linear-to-r from-black md:from-black/40 via-black/90 md:via-black/40 md:to-black/1"></div>
 
-	<!-- Text content -->
-	<div class="relative z-10 md:max-w-[620px] py-28 px-6">
-	  <div class="flex flex-col justify-center gap-5 md:gap-16 -mb-24 md:mb-0 pt-[90px] md:pt-0">
-	    <h2 class="text-left text-5xl md:text-7xl text-white">Get <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>,
-			<br aria-hidden="true">
-			  stay <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>
-			</h2>
-			<p class=" text-lg md:text-2xl text-white">A reliable connection shouldn't come with compromises. Zenith Wireless delivers high-speed internet
-			in schools and towns around campus and hostels for steady internet roaming.</p>
-	  </div>
-	</div>
+  <!-- Text content -->
+  <div class="relative z-10 md:max-w-[620px] py-28 px-6">
+    <div class="flex flex-col justify-center gap-5 md:gap-16 -mb-24 md:mb-0 pt-[90px] md:pt-0">
+      <h2 class="text-left text-5xl md:text-7xl text-white">Get <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>,
+      <br aria-hidden="true">
+      stay <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>
+    </h2>
+    <p class="text-lg md:text-2xl text-white">A reliable connection shouldn't come with compromises. Zenith Wireless delivers high-speed internet
+    in schools and towns around campus and hostels for steady internet roaming.</p>
+  </div>
+</div>
 </section>
+<!-- -----------------End of Get-connected section------------------ -->
 
+<!-- =============================================== -->
+<!-- -----------------Connecting-you section------------------ -->
+<!-- =============================================== -->
+<section class="relative flex flex-col my-8 md:my-12 lg:my-14 xl:my-24 w-full min-h-auto md:min-h-[500px] max-h-[750px] aspect-square md:aspect-auto bg-[#0f141a] overflow-hidden">
+  <div class="absolute inset-0">
+    <%= video_tag "connecting-more.mp4",
+        autoplay: true,
+        muted: true,
+        loop: true,
+        playsinline: true,
+        preload: "metadata",
+        class: "w-full object-cover"
+    %>
+  </div>
+
+  <!-- Text content -->
+  <div class="absolute inset-0 flex flex-col items-start md:items-center md:justify-center py-16 px-7">
+    <div class="">
+      <h2 class="text-5xl md:text-7xl text-left md:text-center text-purple-100"><span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">Connecting you</span> with more
+        <br aria-hidden="true">
+        of what you love
+      </h2>
+    </div>
+
+  </div>
+
+</section>
+<!-- -----------------End of Connecting-you section------------------ -->

@@ -7,5 +7,13 @@
     "tailwindCSS.includeLanguages": {
         "erb": "html",
         "ruby": "html"
-    }
+    },
+    "files.associations": {
+        "*.html.erb": "erb"
+    },
+    "erbFormatter.indentSize": 2,
+    "erbFormatter.useTabs": false,
+    "erbFormatter.preserveBlankLines": true,
+    "erbFormatter.logLevel": "none"
+    
 }
