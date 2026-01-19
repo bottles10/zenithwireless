@@ -34,7 +34,7 @@
 <!-- =============================================== -->
 <!-- -----------------Speed Up section------------------ -->
 <!-- =============================================== -->
-<section class="relative my-6 mx-1 md:my-12 md:mx-1 lg:my-14 lg:mx-14 xl:my-24 xl:mx-24 text-white bg-[#0f141a] rounded-4xl overflow-hidden">
+<section class="relative my-8 md:my-12 lg:my-14 xl:my-24 mx-4 md:mx-8 lg:mx-12 xl:mx-24 text-white bg-[#0f141a] rounded-4xl overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0 z-0">
     <%= image_tag 'speedup-streamon.png',
@@ -150,7 +150,7 @@
   <!-- Text content -->
   <div class="absolute inset-0 flex flex-col items-start md:items-center md:justify-center py-16 px-7">
     <div class="">
-      <h2 class="text-5xl md:text-7xl text-left md:text-center text-purple-100"><span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">Connecting you</span> with more
+      <h2 class="text-5xl md:text-7xl text-left font-light md:text-center text-purple-100"><span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">Connecting you</span> with more
         <br aria-hidden="true">
         of what you love
       </h2>
@@ -160,3 +160,30 @@
 
 </section>
 <!-- -----------------End of Connecting-you section------------------ -->
+
+<!-- =============================================== -->
+<!-- -----------------made-to-move section------------------ -->
+<!-- =============================================== -->
+<section class="relative flex flex-col h-[614px] my-8 md:my-12 lg:my-14 xl:my-24 mx-4 md:mx-8 lg:mx-12 xl:mx-24 bg-[#0f141a] rounded-4xl overflow-hidden">
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <%= image_tag "made-to-move.png",
+        class: "w-full h-full object-cover" 
+    %>
+  </div>
+
+  <!-- Dark overlay for readability -->
+  <div class="absolute md:inset-y-0 bottom-0 h-80 md:h-full w-full md:w-[90%] md:right-0 bg-linear-to-t md:bg-linear-to-l from-black md:from-black/60 via-black/90 md:via-black/60 md:to-black/1"></div>
+
+  <!-- Text content -->
+  <div class="relative z-10 h-full py-28 px-6">
+    <div class="absolute bottom-5 md:inset-y-0 flex flex-col justify-center gap-5 md:gap-16 md:max-w-[620px] md:right-0">
+      <h2 class="text-left text-5xl md:text-7xl font-light text-white">Zenith Wireless,
+      <br aria-hidden="true">
+      for <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">campus life</span>
+    </h2>
+    <p class="text-lg md:text-2xl text-white">From lecture halls to hostels and nearby communities, our internet is designed to follow you. Log in once and stay connected as you move, stream, study, and socialize.</p>
+  </div>
+</div>
+</section>
+<!-- -----------------End of Made-to-move section------------------ -->
