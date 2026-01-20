@@ -87,9 +87,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: zenith_wireless_production
-    username: zenith_wireless
-    password: <%= ENV["ZENITH_WIRELESS_DATABASE_PASSWORD"] %>
+    url: <%= Rails.application.credentials.dig(:DATABASE_URL) %>
   cache:
     <<: *primary_production
     database: zenith_wireless_production_cache
