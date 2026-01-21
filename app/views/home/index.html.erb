@@ -31,44 +31,43 @@
 <!-- -----------------End of Hero section------------------ -->
 
 <!-- =============================================== -->
-<!-- -----------------Speed Up section------------------ -->
+<!-- -----------------Speed-up section------------------ -->
 <!-- =============================================== -->
-<section class="relative my-8 md:my-12 lg:my-14 xl:my-24 mx-4 md:mx-8 lg:mx-12 xl:mx-24 text-white bg-[#0f141a] rounded-4xl overflow-hidden">
+<section class="relative flex flex-col h-[614px] my-8 md:my-12 lg:my-14 xl:my-24 mx-4 md:mx-8 lg:mx-12 xl:mx-24 bg-[#0f141a] rounded-4xl overflow-hidden">
   <!-- Background image -->
-  <div class="absolute inset-0 z-0">
-    <%= image_tag 'speedup-streamon.png',
-        class: "w-full h-full object-cover object-left" %>
+  <div class="absolute inset-0">
+    <%= image_tag "speedup-streamon.png",
+        class: "w-auto md:w-full h-auto md:h-full object-cover object-left aspect-square md:aspect-auto" %>
   </div>
 
   <!-- Dark overlay for readability -->
-  <div class="absolute z-10 md:inset-y-0 bottom-0 md:right-0 w-full md:w-[90%] h-40 md:h-full bg-linear-to-t md:bg-linear-to-r from-black md:from-transparent via-black/90 md:via-black/60 to-transparent md:to-black/70 rounded-4xl"></div>
+  <div class="absolute md:inset-y-0 bottom-0 h-80 md:h-full w-full md:w-[90%] md:left-0 bg-linear-to-t md:bg-linear-to-r from-black md:from-black/60 via-black/90 md:via-black/60 md:to-black/1"></div>
 
   <!-- Text content -->
-  <div class="relative z-10 py-42 md:py-28 px-8 md:px-20 max-w-2xl md:ml-auto">
-    <div class="flex flex-col justify-end md:justify-center gap-4 md:gap-16 -mb-36 md:mb-0 pt-20 md:pt-0">
-      <h2 class="font-bold md:font-normal font-serif text-4xl md:text-8xl">
+  <div class="relative z-10 h-full py-28 px-6">
+    <div class="absolute bottom-5 md:inset-y-0 flex flex-col justify-center gap-5 md:gap-16 md:max-w-[620px] md:left-5">
+      <h2 class="font-light font-serif text-4xl md:text-8xl text-white">
         <span class="bg-clip-text text-transparent
                       bg-linear-to-r from-purple-800
                       via-purple-300 to-purple-50">Speed
-      </span>
+        </span>
         up,
-      <br aria-hidden="true">
-      <span class="bg-clip-text text-transparent
+        <br aria-hidden="true">
+        <span class="bg-clip-text text-transparent
                       bg-linear-to-r from-purple-800
                       via-purple-300 to-purple-50">Stream
-    </span>
-      on
-  </h2>
-
-  <p class="text-sm md:text-xl">
-      Make seamless video calls, stream 4K videos, and accelerate downloads and
-      uploads — all at once. Zenith Wireless is designed to handle all your devices
-      internet needs with a fast, reliable connection.
-  </p>
-</div>
-</div>
+        </span>
+        on
+      </h2>
+      <p class="text-sm md:text-xl text-white">
+        Make seamless video calls, stream 4K videos, and accelerate downloads and
+        uploads — all at once. Zenith Wireless is designed to handle all your devices
+        internet needs with a fast, reliable connection.
+    </p>
+    </div>
+  </div>
 </section>
-<!-- -----------------End of Hero section------------------ -->
+<!-- -----------------End of Speed-up section------------------ -->
 
 <!-- =============================================== -->
 <!-- -----------------High Speed section------------------ -->
@@ -87,7 +86,7 @@
   <!-- Text content -->
   <div class="absolute inset-0 flex flex-col md:items-center justify-center">
     <div class="max-w-7xl py-10 px-7 md:py-16 md:px-16">
-      <div class="flex md:flex-col items-start justify-start md:items-center md:justify-center mb-44 md:mb-0">
+      <div class="flex md:flex-col items-start justify-start md:items-center md:justify-center mb-52 md:mb-0">
         <h2 class="text-4xl md:text-6xl font-thin text-white">High-speed internet
         <br aria-hidden="true">
         <span class="bg-clip-text text-transparent
@@ -104,7 +103,7 @@
 <!-- =============================================== -->
 <!-- -----------------Get connected section------------------ -->
 <!-- =============================================== -->
-<section class="relative flex flex-col my-8 md:my-12 lg:my-14 xl:my-24 mx-4 md:mx-8 lg:mx-12 xl:mx-24 bg-[#0f141a] rounded-4xl overflow-hidden">
+<section class="relative flex flex-col h-[614px] my-8 md:my-12 lg:my-14 xl:my-24 mx-4 md:mx-8 lg:mx-12 xl:mx-24 bg-[#0f141a] rounded-4xl overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0">
     <%= image_tag "get-connected.png",
@@ -112,19 +111,19 @@
   </div>
 
   <!-- Dark overlay for readability -->
-  <div class="absolute md:inset-y-0 bottom-0 h-80 md:h-full w-full md:w-[90%] bg-linear-to-t md:bg-linear-to-r from-black md:from-black/40 via-black/90 md:via-black/40 md:to-black/1"></div>
+  <div class="absolute md:inset-y-0 bottom-0 h-80 md:h-full w-full md:w-[90%] md:left-0 bg-linear-to-t md:bg-linear-to-r from-black md:from-black/60 via-black/90 md:via-black/60 md:to-black/1"></div>
 
   <!-- Text content -->
-  <div class="relative z-10 md:max-w-[620px] py-28 px-6">
-    <div class="flex flex-col justify-center gap-5 md:gap-16 -mb-24 md:mb-0 pt-[90px] md:pt-0">
-      <h2 class="font-serif text-left text-4xl md:text-7xl text-white">Get <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>,
-      <br aria-hidden="true">
-      stay <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>
-    </h2>
-    <p class="text-lg md:text-2xl text-white">A reliable connection shouldn't come with compromises. Zenith Wireless delivers high-speed internet
-    in schools and towns around campus and hostels for steady internet roaming.</p>
+  <div class="relative z-10 h-full py-28 px-6">
+    <div class="absolute bottom-5 md:inset-y-0 flex flex-col justify-center gap-5 md:gap-16 md:max-w-[620px] md:left-5">
+      <h2 class="font-serif text-left text-5xl md:text-7xl text-white">Get <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>,
+        <br aria-hidden="true">
+        stay <span class="bg-clip-text text-transparent bg-linear-to-r from-purple-700 via-purple-400 to-purple-100">connected</span>
+      </h2>
+      <p class="text-lg md:text-2xl text-white opacity-85">A reliable connection shouldn't come with compromises. Zenith Wireless delivers high-speed internet
+        in schools and towns around campus and hostels for steady internet roaming.</p>
+    </div>
   </div>
-</div>
 </section>
 <!-- -----------------End of Get-connected section------------------ -->
 
@@ -191,8 +190,7 @@
       <%= image_tag "zenith-wireless1-white.png",
           width: "139",
           height: "31",
-          class: ""
-      %>
+          class: "" %>
     </div>
     <div>
       <ul class="flex items-center gap-5">
@@ -255,7 +253,7 @@
     </div>
     <div class="px-5 space-y-5">
       <p class="text-center text-gray-500">Speed metrics are based on limited preliminary testing and are not guaranteed. Actual speeds may vary by geography, weather, wifi performance, plan availability, network congestion and policy, and other factors.</p>
-      <p class="text-center text-gray-500">&copy;<%= Time.now.year %> ZenithWireless.com, all rights reserved.  </p>    
+      <p class="text-center text-gray-500">&copy;<%= Time.now.year %>      ZenithWireless.com, all rights reserved.  </p>
     </div>
   </div>
 </footer>
